@@ -3,7 +3,6 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    user: "0:0"
     ports:
       - "${PAPERCLIP_PORT:-3100}:3100"
     environment:
