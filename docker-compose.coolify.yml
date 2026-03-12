@@ -17,6 +17,12 @@ services:
       ANTHROPIC_API_KEY: "${ANTHROPIC_API_KEY:-}"
     volumes:
       - paper-clipardium-leviosa:/paperclip
+    networks:
+      - coolify
 
 volumes:
   paper-clipardium-leviosa:
+
+networks:
+  coolify:
+    external: true
