@@ -16,7 +16,7 @@ services:
       OPENAI_API_KEY: "${OPENAI_API_KEY:-}"
       ANTHROPIC_API_KEY: "${ANTHROPIC_API_KEY:-}"
     volumes:
-      - paperclip-data:/paperclip
+      - paper-clipardium-leviosa:/paperclip
 
 volumes:
-  paperclip-data:
+  paper-clipardium-leviosa:
