@@ -15,6 +15,7 @@ services:
       BETTER_AUTH_SECRET: "${BETTER_AUTH_SECRET:?BETTER_AUTH_SECRET must be set}"
       OPENAI_API_KEY: "${OPENAI_API_KEY:-}"
       ANTHROPIC_API_KEY: "${ANTHROPIC_API_KEY:-}"
+      GITHUB_TOKEN: "${GITHUB_TOKEN:-}"
     volumes:
       - paper-clipardium-leviosa:/paperclip
     networks:
